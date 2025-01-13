@@ -26,7 +26,7 @@ class Car:
     def __is_valid_numbers(self, numbers):
         if not isinstance(numbers, str):
             raise IncorrectCarNumbers('Некорректный тип данных для номеров')
-        if len(numbers) == 6:
+        if len(numbers) != 6:
             raise IncorrectCarNumbers('Неверная длина номера')
         return True
 
